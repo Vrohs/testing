@@ -40,5 +40,8 @@ describe("counter", ()=>{
     render(<App />)
     it("should be inc. and dec.", async()=>{
         const countElement = screen.getByText(/count:/i)
+        const incBtn = screen.getByRole('button', {name:"increment"})
+        const decBtn = screen.getByRole('button', {name:"decrement"})
+        
     })
 })
